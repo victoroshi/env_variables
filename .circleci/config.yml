@@ -1,16 +1,17 @@
 version: 2.1
+
 workflows:
-  env-var-name:
+  test-env-vars:
     jobs:
       - build
 
 jobs:
   build:
     docker:
-      - image: cimg/node:19.5.0
+      - image: cimg/base:2020.01
     steps:
       - checkout
       - run:
-          my_name: "echo name of my enviromental variablest"
+          name: "echo an env var that is part of our project"
           command: |
-            echo $env_udacity	
+            echo $MY_ENV_VAR
