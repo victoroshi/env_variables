@@ -14,4 +14,4 @@ jobs:
       - run:
           name: "echo an env var that is part of our project"
           command: |
-            echo $env_udacity
+            echo env_udacity
