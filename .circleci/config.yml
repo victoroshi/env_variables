@@ -13,4 +13,4 @@ jobs:
       - run:
           my_name: "echo name of my enviromental variablest"
           command: |
-            echo $MY_ENV_VAR
+            echo $env_udacity	
